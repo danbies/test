@@ -1,0 +1,306 @@
+@charset "UTF-8";
+/* 건너뛰기 */
+/* 공통 레이아웃 */
+.innerWrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+/* 헤더 시작 */
+#headerArea>.innerWrapper{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+#headerArea>.innerWrapper>h1{
+    flex-grow: 1;
+    text-align: center;
+    order: 2;
+}
+#headerArea>.innerWrapper>ul.hd_nav{
+    flex-grow: 0;
+    display: flex;
+    order: 1;
+    font-weight: bold;
+}
+#headerArea>.innerWrapper>ul.hd_nav>li{
+    flex-grow: 1;
+    padding-right: 20px;
+    height: 74px;
+    position: relative;
+}
+#headerArea>.innerWrapper>ul.hd_nav>li:last-child{
+    padding-right: 0px;
+}
+#headerArea>.innerWrapper>ul.hd_nav>li>a{
+    display: inline-block;
+    height: 74px;
+    line-height: 74px;
+}
+@keyframes subNavHoverAni {
+    from{
+        opacity: 0;
+        top: 60px;
+    }
+    to{
+        opacity: 1;
+        top: 65px;
+    }
+}
+#headerArea>.innerWrapper>ul.hd_nav>li:hover .hd_subNav{
+    display: block;
+    animation: subNavHoverAni 0.3s;
+    top: 65px;
+}
+#headerArea .hd_subNav{
+    display: none;
+    background-color: #fff;
+    padding: 25px 25px 0 25px;
+    border-radius: 15px;
+    color: #777;
+    box-shadow: 5px 5px 30px #eee;
+    position: absolute;
+    top: 0px;
+}
+#headerArea .hd_subNav>li{
+    padding-bottom: 20px;
+}
+#headerArea .hd_subNav>li:last-child{
+    padding-bottom: 30px;
+}
+#headerArea .border_B{
+    border-bottom: 1px solid #ddd;
+}
+#headerArea .p_t{
+    padding-top: 20px;
+}
+#headerArea .hd_subNav h2{
+    font-weight: bold;
+    white-space: nowrap;
+}
+#headerArea .hd_subNav p{
+    font-size: 0.8em;
+    padding: 5px 0;
+    font-weight: normal;
+    white-space: nowrap;
+}
+#headerArea>.innerWrapper>form{
+    flex-grow: 0;
+    order: 3;
+    display: flex;
+}
+#headerArea>.innerWrapper>form>button{
+    order: 1;
+    position: absolute;
+    background-color: transparent;
+    padding-right: 10px;
+}
+#headerArea>.innerWrapper>form>input{
+    order: 2;
+    padding-left: 40px;
+}
+#headerArea>.innerWrapper>a{
+    flex-grow:0;
+    margin: 0 10px;
+    text-align: center;
+}
+#headerArea>.innerWrapper>a:first-of-type{
+    order: 4;
+}
+#headerArea>.innerWrapper>a:last-of-type{
+    order: 5;
+}
+/* 헤더 끝 */
+/* 컨텐츠 공동영역 시작 */
+/* #con1 */
+#con1{
+    padding-top: 80px;
+}
+#con1 p,#con1 h2, #con1 a{
+    text-align: center;
+}
+#con1 h2{
+    font-size: 4em;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+#con1 p{
+    margin: 10px 0px;
+}
+/* #con2 */
+#con2{
+    padding: 0 72px;
+}
+#con2>section>ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+#con2>section>ul>li{
+    width: 400px;
+    height: 288px;
+}
+#con2>section>ul>li>a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/allimages_sample.jpg);
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+#con2>section>p:last-of-type{
+    padding-top: 48px;
+    text-align: center;
+}
+#con2>section .con_caption{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 40px;
+    position: relative;
+}
+#con2>section .con_caption>.user_Team {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 5px 0;
+}
+#con2>section .con_caption>.user_Team span{
+    position: absolute;
+}
+#con2>section .con_caption>.user_Team span:first-of-type{
+    display:inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/infoSlide_sample.jpg);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    text-indent: -9999px;
+    
+}
+#con2>section .con_caption>.user_Team span:nth-of-type(2){
+    font-weight: bold;
+    line-height: 25px;
+    left: 40px;
+}
+#con2>section .con_caption>.user_Team span:last-of-type{
+    font-weight: bold;
+    line-height: 25px;
+    left: 120px;
+}
+#con2>section .con_caption>.overView{
+    align-content: center;
+}
+#con2>section .con_caption>.overView>button{
+    background-color: transparent;
+    border: none;
+}
+/* 컨텐츠 공동영역 끝 */
+/* 푸터 시작 */
+/* #ft_con1 :hidden */
+/* #ft_con2 시작 */
+#ft_con2{
+    padding-top: 60px;
+}
+#ft_con2>section>ul{
+    position: relative;
+    width: 2000px;
+    height: 194px;
+    display: flex;
+    justify-content: space-around;
+}
+#ft_con2>section>ul>li{
+    display: flex;
+    width: 204px;
+    height: 194px;
+}
+#ft_con2>section>ul>li>a{
+    position: relative;
+    display: inline-block;
+    flex-grow: 1;
+    display: flex;
+}
+#ft_con2>section>ul>li>a>.box{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 1px -1px #fff;
+}
+#ft_con2>section>ul>li>a>.box1{
+    background-image: url(../images/allimages_sample.jpg);
+    background-size: 100%;
+    z-index: 3;
+}
+#ft_con2>section>ul>li>a>.box2{
+    background-color: #edeff6;
+    top: -4px;
+    left: 4px;
+    z-index: 2;
+}
+#ft_con2>section>ul>li>a>.box3{
+    background-color: #ddefe7;
+    top:-8px;
+    left: 8px;
+}
+#ft_con2>section>ul>li>a>span{
+    align-content: flex-end;
+    font-weight: bold;
+}
+/* #ft_con3 시작 */
+#ft_con3>section.innerWrapper{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+#ft_con3>section>.layout_1, #ft_con3>section>.layout_2, #ft_con3>section>.layout_1 .ft_link, #ft_con3>section>.layout_1 .sns_Link,#ft_con3>section>.layout_2 .ft_copy_terms_left, #ft_con3>section>.layout_2 .ft_work_right{
+    display: flex;
+}
+#ft_con3>section>.layout_1, #ft_con3>section>.layout_2{
+    margin: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+#ft_con3>section>.layout_2 .ft_copy_terms_left{
+    flex-grow: 1;
+}
+#ft_con3>section>.layout_1 .ft_link>li>a, #ft_con3>section>.layout_1 .sns_Link>li>a{
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#ft_con3>section>.layout_2 .copyRight{
+    color: #6a6a6a;
+}
+#ft_con3>section>.layout_2 .ft_copy_terms_left>li>a, #ft_con3>section>.layout_2 .ft_work_right>li>a{
+    display: inline-block;
+    padding: 10px;
+    color: #6a6a6a;
+}
+#ft_con3>section>.layout_2 .ft_work_right>li>a:last-of-type{
+    padding-right: 0;
+}
+/* 푸터 끝 */
+/* 공통버튼 디자인 */
+.btnstyleBase{
+    padding: 10px 15px;
+    border-radius: 50px;
+    border: none;
+}
+.btn_black{
+    background-color: #333;
+    color: #f2f2f2;
+}
+.btn_borderB{
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #333;
+}
+.btn_white{
+    background-color: #fff;
+    color: #333;
+}
+

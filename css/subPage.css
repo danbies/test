@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* 헤더 시작 */
+#headerArea form input[type=search]{
+    background-color: #f4f5fb;
+}
+/* 콘텐츠 시작 */
+/* #con1 */
+#con1 form{
+    position: relative;
+    height: 50px;
+    margin: 20px 0;
+    margin-top: 50px;
+}
+#con1 form>.search_box{
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+#con1 form>.search_box>input{
+    box-sizing: border-box;
+    border-color: #eee;
+    width: 600px;
+    padding: 15px 30px;
+    position: absolute;
+    padding-left: 50px;
+}
+#con1 form button{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+}
+#con1 .trending_search{
+    width: 720px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+#con1 .trending_search>h3{
+    display: inline-block;
+    line-height: 36px;
+}
+#con1 .trending_search>ul{
+    display: inline-block;
+    
+}
+#con1 .trending_search>ul li{
+    display: inline-block;
+    border-color: #eee;
+    margin: 0 5px;
+}
+/* #con2 */
+.filter_nav{
+    margin: 100px 0 32px 0;
+}
+.filter_nav section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.filter_nav section>ul{
+    display: flex;
+    font-weight: bold;
+}
+.filter_nav section>ul>li{
+    padding: 0 20px;
+}
+
+.filter_nav form{
+    display: flex;
+    justify-content: space-between;
+}
+.filter_nav form fieldset{
+    box-sizing: border-box;
+    width: 33%; 
+}
+.filter_nav form fieldset:first-child{
+    margin-right: 40px;
+}
+.filter_nav form fieldset:nth-child(2){
+    margin: 0 20px;
+}
+.filter_nav form fieldset:last-child{
+    margin-left: 40px;
+}
+.filter_nav select{
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.filter_nav select, .filter_nav section>a{
+    border: 1px solid #eee;
+}
+.filter_nav form fieldset input,
+.filter_nav form fieldset select
+{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+.filter_nav form fieldset label{
+    font-weight: bold;
+}

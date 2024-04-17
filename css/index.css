@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* 헤더 시작 */
+#headerArea,#con1{
+    background-color: #f8f7f4;
+}
+/* #contentsArea 시작 */
+/* #con1 시작 */
+
+#con1 p:last-of-type{
+    margin-top: 30px;
+}
+@keyframes badge-color-cycle {
+    0%{
+        background-color: #ffda79;
+    }
+    25%{
+        background-color: #ffabe7;
+    }
+    50%{
+        background-color: #d2bcf3;
+    }
+    75%{
+        background-color: #edf3d8;
+    }
+    100%{
+        background-color: #ffda79;
+    }
+    
+}
+#con1 p:first-of-type>a{
+    background-color: #ffda79;
+    animation: badge-color-cycle 10s infinite;
+    font-size: 1.2em;
+}
+
+#con1 section:nth-of-type(2) .info_slide{
+    position: relative;
+    top: 150px;
+    width: 7288px;
+    height: 340px;
+    display: flex;
+    justify-content: space-around;
+}
+#con1 section:nth-of-type(2) .info_slide>.bg_img{
+    width: 272px;
+    height: inherit;
+    background-image: url(../images/infoSlide_sample.jpg);
+    background-size: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    padding: 30px;
+    color: #fff;
+}
+#con1 section:nth-of-type(2) .info_slide>.bg_img>h3{
+    flex-grow: 1;
+    width: 100%;
+    padding: 5px 0;
+    font-weight: bold;
+}
+#con1 section:nth-of-type(2) .info_slide>.bg_img>ul>li{
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+/* #con2 시작 */
+#con2{
+    margin: 200px 0;
+}
+#con2>section>h2{
+    padding-top: 100px;
+    text-align: center;
+    font-size: 4em;
+}
+#con2>section>ul{
+    margin-top: 60px;
+    display: flex;
+}
+/* 푸터 시작 */
+/* #ft_con1 */
+#ft_con1{
+    padding: 120px 0; 
+    background-color: #ffda79;
+}
+#ft_con1 p,#ft_con1 h2, #ft_con1 a{
+    text-align: center;
+}
+#ft_con1 h2{
+    font-size: 4em;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+#ft_con1 p{
+    margin: 10px 0px;
+}
+.p_anchor{
+    padding-top: 20px;
+}
+.p_anchor>a{
+    margin-right: 10px;
+}
+#ft_con1 p:last-of-type{
+    margin-top: 30px;
+}
+#ft_con1 .ft_email{
+    text-decoration: underline
+}
