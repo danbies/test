@@ -93,7 +93,9 @@
     border: 1px solid #eee;
 }
 .filter_nav form fieldset input,
-.filter_nav form fieldset select
+.filter_nav .select_box#timeFrame .select_btn,
+.filter_nav .select_box#timeFrame .option_box,
+.filter_nav .color_palette
 {
     box-sizing: border-box;
     display: block;
@@ -103,6 +105,108 @@
     border-radius: 5px;
     border: 1px solid #eee;
 }
+.filter_nav .select_box{
+    position: relative;
+}
+.filter_nav .select_box .select_btn, 
+.filter_nav .select_box .option_box
+{
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    padding: 10px 15px;
+}
+.filter_nav .select_box .option_box,
+.filter_nav .select_box#timeFrame .option_box
+{
+    font-weight: normal;
+    display: block;
+    font-size: 0.8em;
+    position: absolute;
+    margin-top: 10px;
+    display: none;
+}
+.filter_nav .select_box .option_box>li{
+    padding: 15px 5px;
+    /* background-color: #f2f2f2; */
+    border-radius: 5px;
+    white-space: nowrap;
+}
 .filter_nav form fieldset label{
     font-weight: bold;
+}
+.filter_nav .color_input{
+    position: relative;
+}
+.filter_nav .color_input::before{
+    content: '#';
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    display: none;
+}
+.filter_nav #chooseColor{
+    padding-left: 30px;
+}
+.filter_nav #chooseColor + .color_palette{
+    display: none;
+}
+.filter_nav #chooseColor + .color_palette>ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter_nav #chooseColor + .color_palette>ul>li{
+    width: 40px;
+    height: 20px;
+}
+.bgc_r{
+    background-color: red;
+}
+.bgc_o{
+    background-color: orange;
+}
+.bgc_y{
+    background-color: yellow;
+}
+.bgc_yg{
+    background-color: yellowgreen;
+}
+.bgc_b{
+    background-color: blue;
+}
+.bgc_n{
+    background-color: navy;
+}
+.bgc_v{
+    background-color: violet;
+}
+.bgc_pnk{
+    background-color: pink;
+}
+.bgc_pr{
+    background-color: purple;
+}
+.bgc_br{
+    background-color: brown;
+}
+.bgc_w{
+    background-color: white;
+}
+.bgc_bl{
+    background-color: black;
+}
+.bgc_k{
+    background-color: khaki;
+}
+.bgc_olv{
+    background-color: olive;
+}
+.bgc_skb{
+    background-color: skyblue;
+}
+.bgc_g{
+    background-color: gray;
+}
+.filter_nav .select_box#timeFrame .select_btn{
+    text-align: left;
 }

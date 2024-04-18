@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribble Copy Page - Sub</title>
+    <title>Dribble Copy Page - Sub1</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
@@ -113,11 +113,14 @@
                     <h2 class="hidden">Explore inspiring designs</h2>
                     <div class="filter_nav">
                         <section>
-                            <select name="newSite" id="newSite" title="popular">
-                                <label for="newSite">Popular</label>
-                                <option value="Popular">Popular</option>
-                                <option value="New &amp; Noteworthy">New &amp; Noteworthy</option>
-                            </select>
+                            <div class="select_box">
+                                <button class="select_btn">Popular</button>
+                                <ul class="option_box">
+                                    <li>Popular</li>
+                                    <li>New &amp; Noteworthy</li>
+                                </ul>
+                            </div>
+                            
                             <ul>
                                 <li><a href="#">Discover</a></li>
                                 <li><a href="#">Animation</a></li>
@@ -140,18 +143,60 @@
                             <fieldset>
                                 <legend class="hidden">Color</legend>
                                 <label for="chooseColor">Color</label>
-                                <input type="search" name="chooseColor" id="chooseColor" placeholder="Enter hex or select">
+                                <div class="color_input">
+                                    <input type="search" name="chooseColor" id="chooseColor" placeholder="Enter hex or select">
+                                    <div class="color_palette">
+                                        <ul>
+                                            <li class="bgc_r"><a href="#"></a></li>
+                                            <li class="bgc_o"><a href="#"></a></li>
+                                            <li class="bgc_y"><a href="#"></a></li>
+                                            <li class="bgc_yg"><a href="#"></a></li>
+                                            <li class="bgc_b"><a href="#"></a></li>
+                                            <li class="bgc_n"><a href="#"></a></li>
+                                            <li class="bgc_v"><a href="#"></a></li>
+                                            <li class="bgc_pnk"><a href="#"></a></li>
+                                            <li class="bgc_pr"><a href="#"></a></li>
+                                            <li class="bgc_br"><a href="#"></a></li>
+                                            <li class="bgc_w"><a href="#"></a></li>
+                                            <li class="bgc_bl"><a href="#"></a></li>
+                                            <li class="bgc_k"><a href="#"></a></li>
+                                            <li class="bgc_olv"><a href="#"></a></li>
+                                            <li class="bgc_skb"><a href="#"></a></li>
+                                            <li class="bgc_g"><a href="#"></a></li>
+                                            <li class="bgc_r"><a href="#"></a></li>
+                                            <li class="bgc_o"><a href="#"></a></li>
+                                            <li class="bgc_y"><a href="#"></a></li>
+                                            <li class="bgc_yg"><a href="#"></a></li>
+                                            <li class="bgc_b"><a href="#"></a></li>
+                                            <li class="bgc_n"><a href="#"></a></li>
+                                            <li class="bgc_v"><a href="#"></a></li>
+                                            <li class="bgc_pnk"><a href="#"></a></li>
+                                            <li class="bgc_pr"><a href="#"></a></li>
+                                            <li class="bgc_br"><a href="#"></a></li>
+                                            <li class="bgc_w"><a href="#"></a></li>
+                                            <li class="bgc_bl"><a href="#"></a></li>
+                                            <li class="bgc_k"><a href="#"></a></li>
+                                            <li class="bgc_olv"><a href="#"></a></li>
+                                            <li class="bgc_skb"><a href="#"></a></li>
+                                            <li class="bgc_g"><a href="#"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
                             </fieldset>       
                             <fieldset>
                                 <legend class="hidden">TimeFrame</legend>
                                 <label for="timeFrame">TimeFrame</label>
-                                <select name="timeFrame" id="timeFrame">
-                                    <option value="Now">Now</option>
-                                    <option value="This_Past_Week">This Past Week</option>
-                                    <option value="This_Past_Month">This Past Month</option>
-                                    <option value="This_Past_Year">This Past Year</option>
-                                    <option value="All_Time">All Time</option>
-                                </select>
+                                <div class="select_box" id="timeFrame">
+                                    <button class="select_btn">TimeFrame</button>
+                                    <ul class="option_box">
+                                        <li>Now</li>
+                                        <li>This Past Week</li>
+                                        <li>This Past Month</li>
+                                        <li>This Past Year</li>
+                                        <li>All Time</li>
+                                    </ul>
+                                </div>
                             </fieldset>       
                         </form>
                     </div>
