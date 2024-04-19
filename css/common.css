@@ -68,6 +68,14 @@
 #headerArea .hd_subNav>li:last-child{
     padding-bottom: 30px;
 }
+#headerArea>.innerWrapper>ul.hd_nav .down{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-image: url(../images/arrowDown.png);
+    background-size: 100% 100%;
+    margin-left: 5px;
+}
 #headerArea .border_B{
     border-bottom: 1px solid #ddd;
 }
@@ -110,6 +118,15 @@
 #headerArea>.innerWrapper>a:last-of-type{
     order: 5;
 }
+.searchIcon{
+    width: 38px;
+    height: 38px;
+    background-image: url(../images/search.png);
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    padding-left: 20px;
+}
 /* 헤더 끝 */
 /* 컨텐츠 공동영역 시작 */
 /* #con1 */
@@ -127,6 +144,10 @@
 #con1 p{
     margin: 10px 0px;
 }
+#con1 .searchIcon{
+    width: 50px;
+    background-position: 20% 50%;
+}
 /* #con2 */
 #con2{
     padding: 0 72px;
@@ -134,7 +155,7 @@
 #con2>section>ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 20px;
+    gap: 60px 20px;
     justify-content: space-between;
     padding-bottom: 60px;
 }
@@ -142,13 +163,112 @@
     width: 400px;
     height: 288px;
 }
-#con2>section>ul>li>a{
+#con2>section>ul>li .con_img{
+    display: inline-block;
+    background-image: url(../images/allimages_sample.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    border-radius: 20px;
+    
+}
+#con2>section>ul>li .con_img:hover .con_hover{
+    display: block;
+}
+#con2>section>ul>li .con_img>.con_hover{
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-image: url(../images/allimages_sample.jpg);
-    background-size: 100% 100%;
     border-radius: 20px;
+    color: #fff;
+    background:linear-gradient(to bottom, transparent 0%, transparent 50%, transparent 70%, rgba(20,20,20,0.9) 100%);
+    position: relative;
+    display: none;
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px 20px;
+    height: 100px;
+    box-sizing: border-box;
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover>h3{
+    display: inline-block;
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover>.spanBox{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover>.spanBox>span{
+    display: inline-block;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #222;
+    margin: 0 3px;
+    text-align: center;
+    text-indent: -9999px;
+    background-size: 40% 40%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover>.spanBox>.bookMark{
+    background-image: url(../images/bookmark.png);
+}
+#con2>section>ul>li .con_img>.con_hover>.mainHover>.spanBox>.heartLine{
+    background-image: url(../images/heart-lined.png);
+}
+#con2>section>ul>li:nth-child(2) .con_img{
+    background-image: url(../images/allimages_sample2.jpg);
+}
+#con2>section>ul>li:nth-child(3) .con_img{
+    background-image: url(../images/allimages_sample3.jpg);
+}
+#con2>section>ul>li:nth-child(4) .con_img{
+    background-image: url(../images/allimages_sample4.jpg);
+}
+#con2>section>ul>li:nth-child(5) .con_img{
+    background-image: url(../images/allimages_sample5.png);
+}
+#con2>section>ul>li:nth-child(6) .con_img{
+    background-image: url(../images/allimages_sample6.jpg);
+}
+#con2>section>ul>li:nth-child(7) .con_img{
+    background-image: url(../images/allimages_sample7.jpg);
+}
+#con2>section>ul>li:nth-child(8) .con_img{
+    background-image: url(../images/allimages_sample8.png);
+}
+#con2>section>ul>li:nth-child(9) .con_img{
+    background-image: url(../images/allimages_sample9.jpg);
+}
+#con2>section>ul>li:nth-child(10) .con_img{
+    background-image: url(../images/allimages_sample10.jpg);
+}
+#con2>section>ul>li:nth-child(11) .con_img{
+    background-image: url(../images/allimages_sample11.jpg);
+}
+#con2>section>ul>li:nth-child(12) .con_img{
+    background-image: url(../images/allimages_sample12.png);
+}
+#con2>section>ul>li:nth-child(13) .con_img{
+    background-image: url(../images/allimages_sample13.jpg);
+}
+#con2>section>ul>li:nth-child(14) .con_img{
+    background-image: url(../images/allimages_sample14.jpg);
+}
+#con2>section>ul>li:nth-child(15) .con_img{
+    background-image: url(../images/allimages_sample15.jpg);
+}
+#con2>section>ul>li:nth-child(16) .con_img{
+    background-image: url(../images/mobile.jpg);
 }
 #con2>section>p:last-of-type{
     padding-top: 48px;
@@ -170,7 +290,7 @@
 #con2>section .con_caption>.user_Team span{
     position: absolute;
 }
-#con2>section .con_caption>.user_Team span:first-of-type{
+#con2>section .con_caption>.user_Team>a:first-of-type span:first-of-type{
     display:inline-block;
     width: 25px;
     height: 25px;
@@ -178,17 +298,72 @@
     border-radius: 50%;
     background-size: 100% 100%;
     text-indent: -9999px;
-    
 }
-#con2>section .con_caption>.user_Team span:nth-of-type(2){
+#con2>section>ul>li:nth-child(2) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile1.png);
+}
+#con2>section>ul>li:nth-child(3) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile2.png);
+}
+#con2>section>ul>li:nth-child(4) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile3.png);
+}
+#con2>section>ul>li:nth-child(5) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile4.jpg);
+}
+#con2>section>ul>li:nth-child(6) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile5.jpg);
+}
+#con2>section>ul>li:nth-child(7) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/propile6.png);
+}
+#con2>section>ul>li:nth-child(8) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/infoslide3.jpg);
+}
+#con2>section>ul>li:nth-child(9) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/allimages_sample2.jpg);
+}
+#con2>section>ul>li:nth-child(10) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/infoslide5.jpg);
+}
+#con2>section>ul>li:nth-child(11) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/infoslide9.jpg);
+}
+#con2>section>ul>li:nth-child(12) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/allimages_sample8.png);
+}
+#con2>section>ul>li:nth-child(13) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/allimages_sample3.jpg);
+}
+#con2>section>ul>li:nth-child(14) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/infoslide6.jpg);
+}
+#con2>section>ul>li:nth-child(15) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/infoslide7.jpg);
+}
+#con2>section>ul>li:nth-child(16) .con_caption>.user_Team>a:first-of-type span:first-of-type{
+    background-image: url(../images/illustration.jpg);
+}
+#con2>section .con_caption>.user_Team>a:first-of-type span:last-of-type{
     font-weight: bold;
     line-height: 25px;
     left: 40px;
 }
-#con2>section .con_caption>.user_Team span:last-of-type{
+#con2>section .con_caption>.user_Team>a:last-of-type span{
     font-weight: bold;
-    line-height: 25px;
+    line-height: 15px;
     left: 120px;
+    background-color: #ddd;
+    color: #fff;
+    border-radius: 5px;
+    padding: 0 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#con2>section .con_caption>.user_Team>a:last-of-type span:hover{
+    background-color: #222;
 }
 #con2>section .con_caption>.overView{
     align-content: center;
@@ -230,9 +405,30 @@
     box-shadow: 1px -1px #fff;
 }
 #ft_con2>section>ul>li>a>.box1{
-    background-image: url(../images/allimages_sample.jpg);
-    background-size: 100%;
+    background-image: url(../images/typhograpy.jpg);
+    background-size: 100% 100%;
     z-index: 3;
+}
+#ft_con2>section>ul>li:nth-child(2)>a>.box1{
+    background-image: url(../images/branding.png);
+}
+#ft_con2>section>ul>li:nth-child(3)>a>.box1{
+    background-image: url(../images/product.jpg);
+}
+#ft_con2>section>ul>li:nth-child(4)>a>.box1{
+    background-image: url(../images/illustration.jpg);
+}
+#ft_con2>section>ul>li:nth-child(5)>a>.box1{
+    background-image: url(../images/animation.jpg);
+}
+#ft_con2>section>ul>li:nth-child(6)>a>.box1{
+    background-image: url(../images/print.jpg);
+}
+#ft_con2>section>ul>li:nth-child(7)>a>.box1{
+    background-image: url(../images/web_design.jpg);
+}
+#ft_con2>section>ul>li:nth-child(8)>a>.box1{
+    background-image: url(../images/mobile.jpg);
 }
 #ft_con2>section>ul>li>a>.box2{
     background-color: #edeff6;
@@ -282,6 +478,25 @@
 }
 #ft_con3>section>.layout_2 .ft_work_right>li>a:last-of-type{
     padding-right: 0;
+}
+.snsIcon{
+    width: 30px;
+    height: 30px;
+    background-position: 50%;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+.twt{
+    background-image: url(../images/twitter.png);
+}
+.fcb{
+    background-image: url(../images/facebook.png);
+}
+.ist{
+    background-image: url(../images/instagram.png);
+}
+.ptr{
+    background-image: url(../images/pinterest.png);
 }
 /* 푸터 끝 */
 /* 공통버튼 디자인 */
