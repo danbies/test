@@ -24,6 +24,10 @@
     padding: 15px 30px;
     position: absolute;
     padding-left: 50px;
+    transition: 0.3s;
+}
+#con1 form>.search_box>input:hover{
+    box-shadow: 0px 0px 0px 4px rgba(241, 171, 230, 0.3);
 }
 #con1 form button{
     background-color: transparent;
@@ -49,8 +53,16 @@
     display: inline-block;
     border-color: #eee;
     margin: 0 5px;
+    transition: 0.5s;
+}
+#con1 .trending_search>ul li:hover{
+    border-color: #555;
 }
 /* #con2 */
+#con2{
+    padding-bottom: 100px;
+    position: relative;
+}
 .filter_nav{
     margin: 100px 0 32px 0;
 }
@@ -78,6 +90,7 @@
 }
 .filter_nav form fieldset:first-child{
     margin-right: 40px;
+    position: relative;
 }
 .filter_nav form fieldset:nth-child(2){
     margin: 0 20px;
@@ -85,6 +98,7 @@
 .filter_nav form fieldset:last-child{
     margin-left: 40px;
 }
+
 .filter_nav select{
     border-radius: 5px;
     padding: 10px 15px;
@@ -135,15 +149,32 @@
 .filter_nav form fieldset label{
     font-weight: bold;
 }
+.filter_nav form fieldset:first-child button.searchIcon{
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+}
+.filter_nav form fieldset:first-child input{
+    padding-left: 40px;
+    transition: 0.3s;
+}
+.filter_nav form fieldset:first-child input:hover{
+    box-shadow: 0px 0px 0px 4px rgba(241, 171, 230, 0.3);
+}
 .filter_nav .color_input{
     position: relative;
+}
+.filter_nav form fieldset:nth-child(2) input{
+    transition: 0.3s;
+}
+.filter_nav form fieldset:nth-child(2) input:hover{
+    box-shadow: 0px 0px 0px 4px rgba(241, 171, 230, 0.3);
 }
 .filter_nav .color_input::before{
     content: '#';
     position: absolute;
     top: 18px;
     left: 20px;
-    display: none;
 }
 .filter_nav #chooseColor{
     padding-left: 30px;
@@ -209,4 +240,19 @@
 }
 .filter_nav .select_box#timeFrame .select_btn{
     text-align: left;
+}
+#toTop{
+    float: right;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+    background-image: url(../images/arrow-upW.png);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: absolute;
+    bottom:85px;
+    right: 32px;
 }
