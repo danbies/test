@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/subPage.css">
     <link rel="shortcut icon" href="images/logo.ico">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/subPage.js"></script>
 </head>
 <body>
     <!-- 건너뛰기 링크 영역 시작 -->
@@ -114,8 +117,8 @@
                     <div class="filter_nav">
                         <section>
                             <div class="select_box">
-                                <button class="select_btn">Popular</button>
-                                <ul class="option_box">
+                                <button class="select_btn select_link">Popular</button>
+                                <ul class="option_box select_link_op">
                                     <li>Popular</li>
                                     <li>New &amp; Noteworthy</li>
                                 </ul>
@@ -132,7 +135,7 @@
                                 <li><a href="#">Typography</a></li>
                                 <li><a href="#">Web</a></li>
                             </ul>
-                            <a href="#" class="btnstyleBase btn_borderB">Filters</a>
+                            <a href="#" class="btnstyleBase btn_borderB" id="filters">Filters</a>
                         </section>
                         <form action="#" method="get">
                             <fieldset>
@@ -189,8 +192,8 @@
                                 <legend class="hidden">TimeFrame</legend>
                                 <label for="timeFrame">TimeFrame</label>
                                 <div class="select_box" id="timeFrame">
-                                    <button class="select_btn">TimeFrame</button>
-                                    <ul class="option_box">
+                                    <button class="select_btn tfrm">TimeFrame</button>
+                                    <ul class="option_box tfrm_op">
                                         <li>Now</li>
                                         <li>This Past Week</li>
                                         <li>This Past Month</li>
