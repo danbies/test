@@ -152,6 +152,22 @@
 .select_link_op{
     z-index: 10;
 }
+.select_link_op>li:hover{
+    background-color: #f8f8f8;
+}
+.activeOn{
+    background-color: #f2f2f2;
+}
+.activeOn::after{
+    content: '';
+    background-image: url(../images/check-mark.png);
+    width: 10px;
+    height: 10px;
+    background-size: 100% 100%;
+    float: right;
+    margin-right: 3px;
+
+}
 .tfrm_op{
     display: block;
     z-index: 1000;
@@ -278,4 +294,7 @@
     position: absolute;
     bottom:85px;
     right: 32px;
+}
+#toTop:hover{
+    background-color: #333;
 }
