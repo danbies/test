@@ -79,10 +79,7 @@
 .filter_nav section>ul>li{
     padding: 0 20px;
 }
-.filter_nav>form{
-    height: 0;
-    overflow: hidden;
-}
+
 .filter_nav form{
     display: flex;
     justify-content: space-between;
@@ -126,7 +123,7 @@
     position: relative;
 }
 .filter_nav .select_box .select_btn, 
-.filter_nav .select_box .option_box
+.filter_nav .select_box .option_box, #filters
 {
     background-color: #fff;
     border-radius: 10px;
@@ -152,7 +149,7 @@
 .select_link_op{
     z-index: 10;
 }
-.select_link_op>li:hover{
+.option_box>li:hover{
     background-color: #f8f8f8;
 }
 .activeOn{
@@ -197,8 +194,20 @@
     margin-right: 10px;
     margin-top: 2px;
 }
+.select_link{
+    transition: all 0.3s;
+}
+.select_link:hover{
+    box-shadow: 0px 4px 4px #f2f2f2;
+}
 .filter_nav #filters{
     line-height: 18px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.filter_nav #filters:hover{
+    border-color: #333;
+    
 }
 .filter_nav .color_input{
     position: relative;
@@ -219,6 +228,8 @@
     padding-left: 30px;
 }
 .filter_nav #chooseColor + .color_palette{
+    background-color: #fff;
+    position: absolute;
     display: none;
 }
 .filter_nav #chooseColor + .color_palette>ul{

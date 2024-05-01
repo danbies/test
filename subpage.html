@@ -114,16 +114,15 @@
             <div id="con2">
                 <section>
                     <h2 class="hidden">Explore inspiring designs</h2>
-                    <div class="filter_nav">
+                    <div class="filter_nav" id="filter_form">
                         <section>
                             <div class="select_box">
-                                <button class="select_btn select_link">Popular</button>
+                                <button type="button" class="select_btn select_link">Popular</button>
                                 <ul class="option_box select_link_op">
                                     <li class="activeOn"><a href="#">Popular</a></li>
                                     <li><a href="#">New &amp; Noteworthy</a></li>
                                 </ul>
                             </div>
-                            
                             <ul>
                                 <li><a href="#">Discover</a></li>
                                 <li><a href="#">Animation</a></li>
@@ -135,14 +134,14 @@
                                 <li><a href="#">Typography</a></li>
                                 <li><a href="#">Web</a></li>
                             </ul>
-                            <a href="#" class="btnstyleBase btn_borderB" id="filters">Filters</a>
+                            <button type="button" class="btnstyleBase" id="filters">Filters</button>
                         </section>
-                        <form action="#" method="get">
+                        <form action="#filter_form" method="get">
                             <fieldset>
                                 <legend class="hidden">Tags</legend>
                                 <label for="Tags">Tags</label>
                                 <input type="search" name="Tags" id="Tags">
-                                <button class="btnstyleBase searchIcon"></button>
+                                <button type="button" class="btnstyleBase searchIcon"></button>
                             </fieldset>       
                             <fieldset>
                                 <legend class="hidden">Color</legend>
@@ -192,9 +191,10 @@
                                 <legend class="hidden">TimeFrame</legend>
                                 <label for="timeFrame">TimeFrame</label>
                                 <div class="select_box" id="timeFrame">
-                                    <button class="select_btn tfrm">TimeFrame</button>
+                                    <!-- type=button은 꼭 쓸것 -->
+                                    <button type="button" class="select_btn tfrm">TimeFrame</button>
                                     <ul class="option_box tfrm_op">
-                                        <li>Now</li>
+                                        <li class="activeOn">Now</li>
                                         <li>This Past Week</li>
                                         <li>This Past Month</li>
                                         <li>This Past Year</li>
