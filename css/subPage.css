@@ -130,6 +130,9 @@
     border: 1px solid #eee;
     padding: 10px 15px;
 }
+.filter_nav .select_box .select_btn{
+    padding-right: 5px;
+}
 .filter_nav .select_box .option_box,
 .filter_nav .select_box#timeFrame .option_box
 {
@@ -146,8 +149,23 @@
     border-radius: 5px;
     white-space: nowrap;
 }
+.content_nav>li{
+    line-height: 41px;
+}
+.content_nav>.activeOn{
+    background-color: #f8f7f4;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+.content_nav>.activeOn:after{
+    display: none;
+}
+.content_nav>.activeOn:hover{
+    background-color: #ecebe5;
+}
 .select_link_op{
     z-index: 10;
+    width: 200px;
 }
 .option_box>li:hover{
     background-color: #f8f8f8;
@@ -155,7 +173,7 @@
 .activeOn{
     background-color: #f2f2f2;
 }
-.activeOn::after{
+.activeOn::after, .select_link::after{
     content: '';
     background-image: url(../images/check-mark.png);
     width: 10px;
@@ -163,7 +181,10 @@
     background-size: 100% 100%;
     float: right;
     margin-right: 3px;
-
+    margin-left: 10px;
+}
+.select_link::after{
+    margin-top: 3px;
 }
 .tfrm_op{
     display: block;
@@ -197,7 +218,7 @@
 .select_link{
     transition: all 0.3s;
 }
-.select_link:hover{
+.select_link:hover, #timeFrame:hover{
     box-shadow: 0px 4px 4px #f2f2f2;
 }
 .filter_nav #filters{
@@ -217,6 +238,9 @@
 }
 .filter_nav form fieldset:nth-child(2) input:hover{
     box-shadow: 0px 0px 0px 4px rgba(241, 171, 230, 0.3);
+}
+#timeFrame{
+    transition: all 0.3s;
 }
 .filter_nav .color_input::before{
     content: '#';
@@ -291,7 +315,7 @@
 .filter_nav .select_box#timeFrame .select_btn{
     text-align: left;
 }
-#toTop{
+.toTop{
     float: right;
     border: none;
     width: 40px;
@@ -302,10 +326,15 @@
     background-size: 50% 50%;
     background-repeat: no-repeat;
     background-position: 50%;
-    position: absolute;
     bottom:85px;
     right: 32px;
 }
-#toTop:hover{
+.toTop_absolute{
+    position: absolute;
+}
+.toTop_fixed{
+    position: fixed;
+}
+.toTop:hover{
     background-color: #333;
 }
